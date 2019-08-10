@@ -11,7 +11,7 @@ const forcast = (latitude,longitude, callback) => {
             callback('Unable to find the loction', undefined)
         }
         else{
-            callback(undefined, body.currently.summary + '   it is currently   ' + body.currently.temperature + ' degree out. There is a '+ body.currently. precipProbability+ '% chance of rain')
+            callback(undefined, body.daily.data[0].summary + '   it is currently   ' + body.currently.temperature + ' degree out. The high temperature is '+body.daily.data[0].temperatureHigh+' The low teperature is ' +body.daily.data[0].temperatureLow + 'There is a ' + body.daily.data[0].precipProbability+ '% chance of rain')
         }
     } )
 
