@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <link rel="icon" href="/img/cloud.png">
+    <head1>
+        <title>weather</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head1>
+    <body>
+
+        <div class ="main-content">
+           {{>header}}
+           <p> This is a site for weater forecast</p>
+           
+                <form>
+                    <input placeholder="Enter Loation" width="100px">
+                    <button>Search</button>
+                    
+                </form>
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+                
+        </div>
+        
+  
+    {{>footer}}  
+        <script src="/js/app.js"></Script>
+    </body>
+</html>
